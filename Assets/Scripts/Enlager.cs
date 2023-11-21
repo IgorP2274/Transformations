@@ -10,7 +10,7 @@ public class Enlager : MonoBehaviour
     private void Start() =>
         _scaleChange = new Vector3(_speed, _speed, _speed);
 
-    void Update()
+    private void Update()
     {
         if (transform.localScale.y < _endScale) 
             transform.localScale += _scaleChange * Time.deltaTime;

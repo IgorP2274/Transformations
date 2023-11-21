@@ -6,7 +6,7 @@ public class Rotator: MonoBehaviour
 
     private float _angle = 0;
 
-    void Update()
+    private void Update()
     {
         _angle += _speed * Time.deltaTime;
         transform.rotation = Quaternion.Euler(0, _angle, 0);
